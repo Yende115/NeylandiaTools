@@ -1,0 +1,46 @@
+name: NeylandiaTools
+version: '1.13'
+main: ch.yende.neylandiatools.NeylandiaTools
+api-version: '1.18'
+authors: [Yende]
+description: Outils pour Neylandia !
+commands:
+  broadcast:
+    description: Envoie un message à tout le serveur
+
+  youtube:
+    description: Génère un lien cliquable d'une chaine YouTube
+    aliases:
+      - yt
+      - ytb
+
+  news:
+    description: Affiche la dernière actualité de Neylandia
+    aliases:
+      - new
+      - actu
+
+  ping:
+    description: Envoie une requête de ping
+
+  gmc:
+    description: Raccourci pour /gamemode creative
+    aliases:
+      - gm1
+
+  ec:
+    description: Ouvre un enderchest
+    aliases:
+      - openec
+      - openender
+      - enderchest
+
+  speed:
+    description: Applique un effet de vitesse
+    aliases:
+      - sp
+
+  gmsp:
+    description : Raccourci pour /gamemode spectator
+    aliases :
+      - gm3
