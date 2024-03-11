@@ -1,5 +1,5 @@
 name: NeylandiaTools
-version: '1.13'
+version: '1.14.1'
 main: ch.yende.neylandiatools.NeylandiaTools
 api-version: '1.18'
 authors: [Yende]

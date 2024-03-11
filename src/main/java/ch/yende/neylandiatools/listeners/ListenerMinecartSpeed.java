@@ -4,6 +4,7 @@ import ch.yende.neylandiatools.NeylandiaTools;
 import org.bukkit.Material;
 import org.bukkit.block.Block;
 import org.bukkit.entity.Minecart;
+import org.bukkit.entity.Player;
 import org.bukkit.event.Event;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -22,11 +23,11 @@ public class ListenerMinecartSpeed implements Listener {
     public void onVehicleMove(VehicleMoveEvent event) {
         if (event.getVehicle() instanceof Minecart) {
             Minecart minecart = (Minecart) event.getVehicle();
-            Block blockUnder = minecart.getLocation().getBlock().getRelative(0, -1, 0);
+            Block blockUnder = minecart.getLocation().getBlock().getRelative(0, 0, 0);
 
             if (blockUnder.getType() == Material.RAIL) {
                 Vector currentVelocity = minecart.getVelocity();
-                double speedMultiplier = 1.2;
+                double speedMultiplier = 10;
 
                 Vector newVelocity = currentVelocity.multiply(speedMultiplier);
                 minecart.setVelocity(newVelocity);
