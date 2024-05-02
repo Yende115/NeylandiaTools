@@ -2,13 +2,10 @@ package ch.yende.neylandiatools.commands;
 
 import ch.yende.neylandiatools.NeylandiaTools;
 import org.bukkit.Bukkit;
-import org.bukkit.ChatColor;
-import org.bukkit.Server;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
-import org.jetbrains.annotations.NotNull;
 
 public class CommandPing implements CommandExecutor {
 
@@ -18,12 +15,12 @@ public class CommandPing implements CommandExecutor {
         if (sender instanceof Player) {
 
             Player player = (Player) sender;
-            if (args.length>=2) {
+            if (args.length >= 2) {
                 player.sendMessage(NeylandiaTools.prefix + "§c/ping <joueur>§r");
                 return false;
             }
 
-            if (args.length==0) {
+            if (args.length == 0) {
                 int ping = player.getPing();
                 player.sendMessage(NeylandiaTools.prefix + "§2Votre ping est de " + ping + "§r§2 !");
                 return true;

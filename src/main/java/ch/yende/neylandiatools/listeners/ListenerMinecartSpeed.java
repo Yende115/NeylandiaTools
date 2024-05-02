@@ -30,7 +30,7 @@ public class ListenerMinecartSpeed implements Listener {
             Block blockUnder = minecart.getLocation().getBlock().getRelative(0, 0, 0);
 
             //Si le bloc en-dessous du minecart est un rail
-            if (blockUnder.getType() == Material.POWERED_RAIL) {
+            if (blockUnder.getType() == Material.POWERED_RAIL && blockUnder.getBlockPower()<=1) {
                 Vector currentVelocity = minecart.getVelocity();
                 double speedMultiplier = 1.2;
 

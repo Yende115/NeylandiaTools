@@ -1,5 +1,5 @@
 name: NeylandiaTools
-version: '1.15.1'
+version: '1.16'
 main: ch.yende.neylandiatools.NeylandiaTools
 api-version: '1.18'
 authors: [Yende]
@@ -44,3 +44,7 @@ commands:
     description : Raccourci pour /gamemode spectator
     aliases :
       - gm3
+
+  hat:
+    description : Place un bloc sur la tête du joueur
+  

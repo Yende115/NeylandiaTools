@@ -63,7 +63,7 @@ public class CommandNews implements CommandExecutor {
             }
 
             String news = NeylandiaTools.getInstance().getConfig().getString("Messages.News");
-            String message = "§a================ §b§l[§r§7News de Neylandia§b§l] §r§a================§r\n" + news;
+            String message = "§a================== §b§l[§r§7News de Neylandia§b§l] §r§a==================§r\n" + news;
 
             sender.sendMessage(message);
 

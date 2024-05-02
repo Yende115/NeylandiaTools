@@ -38,6 +38,7 @@ public class CommandSpeed implements CommandExecutor {
         if (args[0].equalsIgnoreCase("stop") || args[0].equalsIgnoreCase("reset") || args[0].equalsIgnoreCase("r")) {
 
             player.setFlySpeed(0.12f);
+            player.setWalkSpeed(0.2f);
             player.sendMessage(NeylandiaTools.prefix + "§2Annulation de l'effet de vitesse");
 
             return true;
@@ -59,7 +60,6 @@ public class CommandSpeed implements CommandExecutor {
             }
 
             player.setFlySpeed((float) speed / 10);
-            player.setWalkSpeed((float) speed / 10);
 
             player.sendMessage(NeylandiaTools.prefix + "§2Application d'un effet de vitesse de " + speed);
 

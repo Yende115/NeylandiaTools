@@ -5,6 +5,7 @@ ch\yende\neylandiatools\commands\CommandPing.class
 ch\yende\neylandiatools\commands\gm\CommandGmc.class
 ch\yende\neylandiatools\listeners\ListenerNews.class
 ch\yende\neylandiatools\listeners\ListenerMinecartSpeed.class
+ch\yende\neylandiatools\commands\CommandHat.class
 ch\yende\neylandiatools\listeners\ListenerNews$1.class
 ch\yende\neylandiatools\NeylandiaTools.class
 ch\yende\neylandiatools\commands\gm\CommandGmsp.class
