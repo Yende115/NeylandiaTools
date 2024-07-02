@@ -30,6 +30,7 @@ commands:
 
   ec:
     description: Ouvre un enderchest
+    permission: neylandiatools.enderchest.use
     aliases:
       - openec
       - openender

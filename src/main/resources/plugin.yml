@@ -1,5 +1,5 @@
 name: NeylandiaTools
-version: '1.16'
+version: '1.17'
 main: ch.yende.neylandiatools.NeylandiaTools
 api-version: '1.18'
 authors: [Yende]
@@ -30,6 +30,7 @@ commands:
 
   ec:
     description: Ouvre un enderchest
+    permission: neylandiatools.enderchest.use
     aliases:
       - openec
       - openender

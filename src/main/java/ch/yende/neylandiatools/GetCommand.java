@@ -15,5 +15,6 @@ public class GetCommand {
         plugin.getCommand("speed").setExecutor(new CommandSpeed());
         plugin.getCommand("gmsp").setExecutor(new CommandGmsp());
         plugin.getCommand("hat").setExecutor(new CommandHat());
+        plugin.getCommand("ec").setExecutor(new CommandEnder());
     }
 }
